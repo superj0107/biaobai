@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表白网页</title>
+    <link rel="stylesheet" href="biaobai_styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>我喜欢你</h1>
+        <p class="message">从第一次见到你，我就深深地被你吸引。</p>
+        <p class="message">我想告诉你，你在我心中是最特别的那一个。</p>
+        <div class="heart">&hearts;</div>
+        <button onclick="showLoveMessage()">点击了解更多</button>
+        <div id="moreMessage" class="hidden">
+            <p>每当你微笑的时候，我的世界都变得更加明亮。</p>
+            <p>希望能和你度过每一个美好的时光。</p>
+            <p>—— 真心喜欢你的某人</p>
+        </div>
+    </div>
+
+    <script>
+        function showLoveMessage() {
+            document.getElementById('moreMessage').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
